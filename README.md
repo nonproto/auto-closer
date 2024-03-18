@@ -20,7 +20,7 @@ jobs:
     name: Close old issues
     runs-on: ubuntu-latest
     steps:
-    - uses: nonproto/auto-closer@v0.0.5
+    - uses: nonproto/auto-closer@v1.0.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         AC_LABEL: "report"
