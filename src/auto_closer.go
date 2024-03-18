@@ -26,14 +26,14 @@ func newAutoCloser() (*autoCloser, error) {
 	a := &autoCloser{}
 
 	if os.Getenv("AC_KEEP") == "" {
-		a.keep = 1
+		a.keep = 0
 	} else {
 		keep, err := strconv.Atoi(os.Getenv("AC_KEEP"))
 		if err != nil {
 			return nil, err
 		}
-		if keep < 1 {
-			return nil, errors.New("AC_KEEP should be larger than 0")
+		if keep < 0 {
+			return nil, errors.New("AC_KEEP should be 0 or larger")
 		}
 		if keep > 99 {
 			return nil, errors.New("AC_KEEP should be less than 100")
