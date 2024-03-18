@@ -1,6 +1,6 @@
-name: 'Auto Closer'
-author: 'Sho Mizutani <lowply@github.com>'
-description: 'A GitHub Action that closes all issues with a specific label while keeping the latest one(s) open.'
+name: 'Auto Issue Closer'
+author: 'nonproto <2092019+nonproto@users.noreply.github.com>'
+description: 'A GitHub Action that closes all issues with a specific label while providing the option of keep X number of latest ones.'
 runs:
   using: 'docker'
   image: 'Dockerfile'
