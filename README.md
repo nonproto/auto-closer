@@ -1,6 +1,6 @@
-# Auto Closer
+# Auto Issue Closer
 
-This action closes all issues that have a specific label. Works best for daily, weekly or monthly auto created issues (e.g. [lowply/issue-from-template](https://github.com/lowply/issue-from-template/)). Use with care for the initial run especially when you have a large number of open issues with the label.  The changes from this vs upstream, is it doesn't default to 1.  So this action is good for labeling issues for a release.
+This action closes all issues that have a specific label  The changes from this vs upstream (https://github.com/lowply/auto-closer), is it doesn't default to 1.  So this action is good for labeling issues for a release.
 
 ## Environment variables
 
